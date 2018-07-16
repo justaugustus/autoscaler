@@ -20,8 +20,8 @@ import (
 	"runtime"
 	"testing"
 
+	api "k8s.io/api/core/v1"
 	resource "k8s.io/kubernetes/pkg/api/resource"
-	api "k8s.io/kubernetes/pkg/api/v1"
 )
 
 var (

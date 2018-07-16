@@ -24,7 +24,7 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	api "k8s.io/kubernetes/pkg/api/v1"
+	api "k8s.io/api/core/v1"
 )
 
 // checkResource determines whether a specific resource needs to be over-written.

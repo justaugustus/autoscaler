@@ -20,13 +20,13 @@ import (
 	"fmt"
 	"time"
 
-	api "k8s.io/kubernetes/pkg/api"
-	apiv1 "k8s.io/kubernetes/pkg/api/v1"
-	cache "k8s.io/kubernetes/pkg/client/cache"
-	client "k8s.io/kubernetes/pkg/client/clientset_generated/release_1_3"
-	runtime "k8s.io/kubernetes/pkg/runtime"
-	wait "k8s.io/kubernetes/pkg/util/wait"
-	watch "k8s.io/kubernetes/pkg/watch"
+	apiv1 "k8s.io/api/core/v1"
+	api "k8s.io/apimachinery/pkg/apis/meta/v1"
+	runtime "k8s.io/apimachinery/pkg/runtime"
+	wait "k8s.io/apimachinery/pkg/util/wait"
+	watch "k8s.io/apimachinery/pkg/watch"
+	cache "k8s.io/client-go/tools/cache"
+	client "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset"
 )
 
 type kubernetesClient struct {

@@ -27,8 +27,8 @@ import (
 	"k8s.io/autoscaler/addon-resizer/nanny"
 	resource "k8s.io/kubernetes/pkg/api/resource"
 
-	client "k8s.io/kubernetes/pkg/client/clientset_generated/release_1_3"
-	"k8s.io/kubernetes/pkg/client/restclient"
+	restclient "k8s.io/client-go/rest"
+	client "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset"
 )
 
 const noValue = "MISSING"
