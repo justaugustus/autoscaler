@@ -8,13 +8,13 @@
   version = "v1.1.0"
 
 [[projects]]
+  branch = "master"
   name = "github.com/docker/distribution"
   packages = [
-    "digest",
+    "digestset",
     "reference"
   ]
-  revision = "48294d928ced5dd9b378f7fd7c6f5da3ff3f2c89"
-  version = "v2.6.2"
+  revision = "749f6afb4572201e3c37325d0ffedb6f32be8950"
 
 [[projects]]
   name = "github.com/ghodss/yaml"
@@ -106,6 +106,12 @@
   packages = ["."]
   revision = "4b7aa43c6742a2c18fdef89dd197aaae7dac7ccd"
   version = "1.0.1"
+
+[[projects]]
+  name = "github.com/opencontainers/go-digest"
+  packages = ["."]
+  revision = "279bed98673dd5bef374d3b6e4b09e2af76183bf"
+  version = "v1.0.0-rc1"
 
 [[projects]]
   branch = "master"
@@ -234,7 +240,7 @@
   revision = "0f405100dbd50445fe5c6c821e972b9d46afd80e"
 
 [[projects]]
-  branch = "master"
+  branch = "release-1.11"
   name = "k8s.io/apimachinery"
   packages = [
     "pkg/api/errors",
@@ -265,7 +271,6 @@
     "pkg/util/framer",
     "pkg/util/intstr",
     "pkg/util/json",
-    "pkg/util/naming",
     "pkg/util/net",
     "pkg/util/runtime",
     "pkg/util/sets",
@@ -277,7 +282,7 @@
     "pkg/watch",
     "third_party/forked/golang/reflect"
   ]
-  revision = "d19e3354dd8cc16b92ff36926371c41f30b1025e"
+  revision = "103fd098999dc9c0c88536f5c9ad2e5da39373ae"
 
 [[projects]]
   branch = "master"
@@ -415,6 +420,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8b5da692499f19db72aedf158c2633a2c6b443cfc092aff1cd920f5bde8aa98a"
+  inputs-digest = "f5049a5e0550b5180ccc058c35a37933f5fa9f1ab0055d3653b3ae0a921f519b"
   solver-name = "gps-cdcl"
   solver-version = 1
